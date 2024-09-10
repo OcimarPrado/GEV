@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,6 +13,8 @@
         android:text="Tela de Cadastro!"
         android:textAlignment="center"
         android:textColor="#1A4B06"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,41 +37,42 @@
         android:layout_marginTop="32dp"
         android:hint="Digite seu Nome"
         android:inputType="text"
+        android:padding="16dp"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:layout_editor_absoluteX="0dp"
-        android:padding="16dp"/>
+        tools:layout_editor_absoluteX="0dp" />
 
-    <EditText
-        android:id="@+id/editEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:hint=" Digite seu Email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editSenha"
-        tools:layout_editor_absoluteX="0dp"
-        android:padding="16dp"/>
 
     <EditText
         android:id="@+id/editSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
         android:hint="Digite sua Senha"
         android:inputType="textPassword"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/butRegister"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint=" Digite seu Email"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
         app:layout_constraintTop_toBottomOf="@+id/editName"
-        tools:layout_editor_absoluteX="0dp"
-        android:padding="16dp"/>
+        tools:layout_editor_absoluteX="24dp" />
 
     <Button
         android:id="@+id/butRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginBottom="36dp"
+        android:padding="16dp"
         android:text="Registrar"
-        app:layout_constraintTop_toBottomOf="@+id/editEmail"
-        tools:layout_editor_absoluteX="0dp"
-        android:padding="16dp"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

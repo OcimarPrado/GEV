@@ -24,10 +24,11 @@
         <activity
             android:name=".CadastroActivity"
             android:exported="false">
-
         </activity>
-
-
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>

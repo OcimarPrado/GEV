@@ -23,7 +23,14 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CadastroActivity::class.java)
             startActivity(intent)
 
+        }
+        val loginButton: Button = findViewById(R.id.butLog)
+        loginButton.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
 
         }
+
     }
 }
+
