@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Produto" />
+
+    <EditText
+        android:id="@+id/editTextDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descrição do Produto"
+        android:layout_below="@id/editTextNome"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/editTextValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor do Produto"
+        android:layout_below="@id/editTextDescricao"
+        android:layout_marginTop="8dp"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data"
+        android:layout_below="@id/editTextValor"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/editTextEntrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrada"
+        android:layout_below="@id/editTextData"
+        android:layout_marginTop="8dp"
+        android:inputType="number" />
+
+
+    <EditText
+        android:id="@+id/editTextSaida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Saída"
+        android:layout_below="@id/editTextData"
+        android:layout_marginTop="8dp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextQuantidadeEmEstoque"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantidade em Estoque"
+        android:layout_below="@id/editTextSaida"
+        android:layout_marginTop="8dp"
+        android:inputType="number" />
+
+
+    <Button
+        android:id="@+id/buttonAdicionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Produto"
+        android:layout_below="@id/editTextQuantidadeEmEstoque"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>
